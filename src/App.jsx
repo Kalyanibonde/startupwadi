@@ -8,12 +8,13 @@ import Merchandise from "./components/Merchandise";
 
 function App() {
   return (
-    <Router>  {/* ✅ Wrap everything inside BrowserRouter */}
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Offerings" element={<Offerings />} />
-        <Route path="/GetInvolved" element={<GetInvolved />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/get-involved" element={<GetInvolved />} />
+
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/Merchandise" element={<Merchandise />} />
       </Routes>
     </Router>
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+
