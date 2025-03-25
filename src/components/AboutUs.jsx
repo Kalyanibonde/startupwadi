@@ -46,9 +46,6 @@ const AboutUs = () => {
               {section.icon}
               <h2 className="text-3xl font-bold mb-4 text-white">{section.title}</h2>
               <p className="text-gray-200">{section.description}</p>
-              <div>
-                <h3>hello</h3>
-              </div>
             </motion.div>
           ))}
         </div>
