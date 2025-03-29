@@ -5,7 +5,7 @@ import Offerings from "./pages/Offerings";
 import GetInvolved from "./pages/GetInvolved";
 import AboutUs from "./pages/AboutUs";
 import Merchandise from "./pages/Merchandise";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LoginPage from "./pages/Login"; // Replace with actual login page component
 import SignInPage from "./pages/Signin";

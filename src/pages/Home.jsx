@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Button, Carousel ,Badge} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import Navbar and Footer components
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React, { useState, useEffect, useRef } from 'react';
 import { 
