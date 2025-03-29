@@ -7,12 +7,13 @@ import {
   PersonCircle, 
   Bag 
 } from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Added useNavigate import
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
+  const navigate = useNavigate(); // Initialize the navigate function
 
   // Scroll effect
   useEffect(() => {
@@ -143,9 +144,32 @@ const NavBar = () => {
                   e.currentTarget.style.backgroundColor = '#5A3BC5';
                   e.currentTarget.style.boxShadow = '0 4px 10px rgba(90, 59, 197, 0.25)';
                 }}
+                onClick={() => navigate('/login')}
               >
-                <PersonCircle className="me-2" size={18} />
                 Login
+              </Button>
+              
+              {/* Signin Button */}
+              <Button 
+                variant="primary" 
+                className="d-flex align-items-center ms-2 px-4 py-2 rounded-pill fw-medium"
+                style={{ 
+                  backgroundColor: '#5A3BC5', 
+                  border: 'none',
+                  boxShadow: '0 4px 10px rgba(90, 59, 197, 0.25)',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#4a30a3';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(90, 59, 197, 0.35)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#5A3BC5';
+                  e.currentTarget.style.boxShadow = '0 4px 10px rgba(90, 59, 197, 0.25)';
+                }}
+                onClick={() => navigate('/signin')}
+              >
+                SignIn
               </Button>
             </Nav>
           </Navbar.Collapse>
@@ -201,9 +225,31 @@ const NavBar = () => {
                 border: 'none',
                 boxShadow: '0 4px 10px rgba(90, 59, 197, 0.25)'
               }}
+              onClick={() => {
+                navigate('/login');
+                setShowOffcanvas(false);
+              }}
             >
               <PersonCircle className="me-2" size={20} />
               Login
+            </Button>
+            
+            {/* Mobile SignIn Button */}
+            <Button 
+              variant="outline-primary" 
+              className="d-flex align-items-center justify-content-center mt-2 py-3 w-100 rounded-pill"
+              style={{ 
+                color: '#5A3BC5', 
+                borderColor: '#5A3BC5',
+                backgroundColor: 'transparent'
+              }}
+              onClick={() => {
+                navigate('/signin');
+                setShowOffcanvas(false);
+              }}
+            >
+              <PersonCircle className="me-2" size={20} />
+              SignIn
             </Button>
           </Nav>
         </Offcanvas.Body>

@@ -5,9 +5,11 @@ import Offerings from "./pages/Offerings";
 import GetInvolved from "./pages/GetInvolved";
 import AboutUs from "./pages/AboutUs";
 import Merchandise from "./pages/Merchandise";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
-
+import LoginPage from "./pages/Login"; // Replace with actual login page component
+import SignInPage from "./pages/Signin";
+import ForgotPassword from "./pages/ForgotPassword";
 function App() {
   return (
     <Router>
@@ -17,6 +19,9 @@ function App() {
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/Merchandise" element={<Merchandise />} />
+        <Route path="/Login" element={<LoginPage />} />
+          <Route path="/Signin" element={<SignInPage />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
 
         <Route path="/Navbar" element={<Navbar />} />
         <Route path="/Footer" element={<Footer />} />
