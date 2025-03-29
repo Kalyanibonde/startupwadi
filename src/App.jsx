@@ -7,7 +7,6 @@ import AboutUs from "./pages/AboutUs";
 import Merchandise from "./pages/Merchandise";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
