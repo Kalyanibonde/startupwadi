@@ -9,7 +9,7 @@ import {
 } from 'react-bootstrap-icons';
 import { Link, useNavigate } from 'react-router-dom'; // Added useNavigate import
 
-const Navbar = () => {
+const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
@@ -258,4 +258,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

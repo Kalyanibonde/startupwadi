@@ -29,7 +29,7 @@ import {
   Filter,
   SortDown
 } from 'react-bootstrap-icons';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 
 const Merchandise = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -348,7 +348,7 @@ const Merchandise = () => {
   return (
     <div className="min-vh-100 d-flex flex-column overflow-x-hidden">
       {/* Navbar */}
-      <Navbar />
+      <NavBar />
       
       {/* Notification */}
       <Alert 

@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Button, Carousel ,Badge} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import Navbar and Footer components
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import React, { useState, useEffect, useRef } from 'react';
 import { 
@@ -815,7 +815,7 @@ const TestimonialSection = () => {
 const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
-      <Navbar />
+      <NavBar />
       <main className="flex-grow-1">
         <Hero />
         <AboutSection />
