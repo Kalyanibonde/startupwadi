@@ -567,17 +567,7 @@ const Merchandise = () => {
                 </Card.Body>
               </Card>
               
-              <Card className="shadow-sm border-0">
-                <Card.Header className="bg-white border-bottom-0 pt-4">
-                  <h5 className="mb-0">Quick Links</h5>
-                </Card.Header>
-                <ListGroup variant="flush">
-                  <ListGroup.Item action className="border-0 py-3">New Arrivals</ListGroup.Item>
-                  <ListGroup.Item action className="border-0 py-3">Best Sellers</ListGroup.Item>
-                  <ListGroup.Item action className="border-0 py-3">Sale Items</ListGroup.Item>
-                  <ListGroup.Item action className="border-0 py-3">Gift Ideas</ListGroup.Item>
-                </ListGroup>
-              </Card>
+              
             </Col>
             
             {/* Product Grid */}
