@@ -7,13 +7,13 @@ import {
   PersonCircle, 
   Bag 
 } from 'react-bootstrap-icons';
-import { Link, useNavigate } from 'react-router-dom'; // Added useNavigate import
+import { Link, useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
 
   // Scroll effect
   useEffect(() => {
@@ -59,9 +59,9 @@ const NavBar = () => {
       <Navbar 
         expand="md" 
         fixed="top" 
-        className={`bg-white ${isScrolled ? 'shadow-lg' : 'shadow-sm'} py-2 transition-all duration-300`}
+        className="bg-white py-2"
         style={{ 
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+          boxShadow: isScrolled ? '0 4px 12px rgba(0, 0, 0, 0.08)' : '0 1px 6px rgba(0, 0, 0, 0.05)',
           transition: 'all 0.3s ease'
         }}
       >
@@ -149,7 +149,7 @@ const NavBar = () => {
                 Login
               </Button>
               
-              {/* Signin Button */}
+              {/* Sign In Button */}
               <Button 
                 variant="primary" 
                 className="d-flex align-items-center ms-2 px-4 py-2 rounded-pill fw-medium"
@@ -169,7 +169,7 @@ const NavBar = () => {
                 }}
                 onClick={() => navigate('/signin')}
               >
-                SignIn
+                Sign In
               </Button>
             </Nav>
           </Navbar.Collapse>
@@ -234,7 +234,7 @@ const NavBar = () => {
               Login
             </Button>
             
-            {/* Mobile SignIn Button */}
+            {/* Mobile Sign In Button */}
             <Button 
               variant="outline-primary" 
               className="d-flex align-items-center justify-content-center mt-2 py-3 w-100 rounded-pill"
@@ -249,7 +249,7 @@ const NavBar = () => {
               }}
             >
               <PersonCircle className="me-2" size={20} />
-              SignIn
+              Sign In
             </Button>
           </Nav>
         </Offcanvas.Body>

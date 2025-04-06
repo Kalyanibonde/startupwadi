@@ -35,7 +35,8 @@ function App() {
         <Route path="/Signin" element={<SignInPage />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
       </Routes>
-      <Footer /> {/* Keep Footer outside Routes so it's always visible */}
+       {/* Keep Footer outside Routes so it's always visible */}
+       <Footer/>
     </Router>
   );
 }
