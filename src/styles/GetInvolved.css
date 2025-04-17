@@ -1,0 +1,81 @@
+/* Custom styles for Get Involved page */
+
+/* Progress bar styling */
+.progress-bar {
+    background-color: #5a3bc5;
+  }
+  
+  /* Custom button hover effects */
+  .btn-primary:hover {
+    background-color: #4a30a3 !important;
+    border-color: #4a30a3 !important;
+    box-shadow: 0 4px 12px rgba(90, 59, 197, 0.35) !important;
+  }
+  
+  /* Card hover effects */
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Form control focus */
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #5a3bc5;
+    box-shadow: 0 0 0 0.25rem rgba(90, 59, 197, 0.25);
+  }
+  
+  /* Custom checkbox styling */
+  .form-check-input:checked {
+    background-color: #5a3bc5;
+    border-color: #5a3bc5;
+  }
+  
+  /* Table styling */
+  .table thead th {
+    background-color: #f8f9fa;
+    color: #344d5a;
+    font-weight: 600;
+  }
+  
+  /* Alert styling */
+  .alert-info {
+    background-color: rgba(90, 59, 197, 0.1);
+    border-color: rgba(90, 59, 197, 0.2);
+    color: #344d5a;
+  }
+  
+  /* Responsive text */
+  @media (max-width: 768px) {
+    h1.display-4 {
+      font-size: 2.5rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animation for step transitions */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  
